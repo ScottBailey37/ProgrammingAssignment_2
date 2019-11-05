@@ -77,11 +77,11 @@ namespace ProgrammingAssignment_2_CSIS209
         }
         
         /// <summary>
-        /// Calculates the total sales, given the item number and quantity of items sold.
+        /// Calculates the item sales, given the item number and quantity of items sold.
         /// </summary>
         /// <param name="itemNum">The item number.</param>
         /// <param name="quantity">The quantity of items.</param>
-        /// <returns>Floating point value of the total sales. Otherwise, zero.</returns>
+        /// <returns>Floating point value of the item sales. Otherwise, zero.</returns>
         static double CurrentItemSales(double itemNum, double quantity)
         {
             double itemSales = 0;
