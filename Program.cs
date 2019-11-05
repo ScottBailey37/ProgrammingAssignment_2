@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ProgrammingAssignment_2_CSIS209
 {
@@ -30,13 +27,12 @@ namespace ProgrammingAssignment_2_CSIS209
             // Prompt the user for the name of the salesperson
             Console.Write("Enter a salesperson's name: ");
             name = Console.ReadLine(); 
-            Console.WriteLine();
-            
+            Console.WriteLine();            
             
             // Now, prompt the user for the item # and quantity of the salesperson's sale
-            // NOTE: This loop will continue incrementing the total sales of the salesperson
-            //    as many times as the user wants. It will exit when the user enters
-            //    -1 for the item #.
+            //   NOTE: This loop will continue incrementing the total sales of the salesperson
+            //      as many times as the user wants. It will exit when the user enters
+            //      -1 for the item #.
             do
             {
                 // Prompt the user for a valid item #
@@ -44,6 +40,7 @@ namespace ProgrammingAssignment_2_CSIS209
                 intItem = int.Parse(Console.ReadLine()); 
 
                 // Make sure the user supplied a valid entry for item #
+                //   NOTE: No error checking for nonnumeric entries
                 if (intItem > 0 && intItem <= 4) // Only entries 1 to 4 are excepted
                 {
                     // They did. So, get the quantity sold of this particular item
@@ -61,7 +58,7 @@ namespace ProgrammingAssignment_2_CSIS209
                     // current item sales
                     dblTotalSales += dblItemSales;
                 }
-
+                                
                 else if (intItem != -1) // Not a valid item # or quit entry
                 {
                     // Notify user of invalid entry for item number
